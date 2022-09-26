@@ -61,6 +61,70 @@ const characters = [
   "7",
   "8",
   "9",
+];
+const symbolCharacters = [
+  "A",
+  "B",
+  "C",
+  "D",
+  "E",
+  "F",
+  "G",
+  "H",
+  "I",
+  "J",
+  "K",
+  "L",
+  "M",
+  "N",
+  "O",
+  "P",
+  "Q",
+  "R",
+  "S",
+  "T",
+  "U",
+  "V",
+  "W",
+  "X",
+  "Y",
+  "Z",
+  "a",
+  "b",
+  "c",
+  "d",
+  "e",
+  "f",
+  "g",
+  "h",
+  "i",
+  "j",
+  "k",
+  "l",
+  "m",
+  "n",
+  "o",
+  "p",
+  "q",
+  "r",
+  "s",
+  "t",
+  "u",
+  "v",
+  "w",
+  "x",
+  "y",
+  "z",
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "6",
+  "7",
+  "8",
+  "9",
   "~",
   "`",
   "!",
@@ -95,53 +159,62 @@ const characters = [
 let generateBtn = document.querySelector(".generate-btn");
 let password1 = document.querySelector(".gen-password1");
 let password2 = document.querySelector(".gen-password2");
-let randomLetter1 = characters[Math.floor(Math.random() * characters.length)];
-let randomLetter2 = characters[Math.floor(Math.random() * characters.length)];
-let randomLetter3 = characters[Math.floor(Math.random() * characters.length)];
-let randomLetter4 = characters[Math.floor(Math.random() * characters.length)];
-let randomLetter5 = characters[Math.floor(Math.random() * characters.length)];
-let randomLetter6 = characters[Math.floor(Math.random() * characters.length)];
-let randomLetter7 = characters[Math.floor(Math.random() * characters.length)];
-let randomLetter8 = characters[Math.floor(Math.random() * characters.length)];
-let randomLetter9 = characters[Math.floor(Math.random() * characters.length)];
-let randomLetter10 = characters[Math.floor(Math.random() * characters.length)];
-let randomLetter11 = characters[Math.floor(Math.random() * characters.length)];
-let randomLetter12 = characters[Math.floor(Math.random() * characters.length)];
-let randomLetter13 = characters[Math.floor(Math.random() * characters.length)];
-let randomLetter14 = characters[Math.floor(Math.random() * characters.length)];
-let randomLetter15 = characters[Math.floor(Math.random() * characters.length)];
-let randomLetter16 = characters[Math.floor(Math.random() * characters.length)];
+let withSymbol = document.querySelector(".radio-button").checked;
+let lenghtInput = document.querySelector(".password-lenght");
+
+let passwordSymbol = {
+  ps1: symbolCharacters[Math.floor(Math.random() * symbolCharacters.length)],
+  ps2: symbolCharacters[Math.floor(Math.random() * symbolCharacters.length)],
+  ps3: symbolCharacters[Math.floor(Math.random() * symbolCharacters.length)],
+  ps4: symbolCharacters[Math.floor(Math.random() * symbolCharacters.length)],
+  ps5: symbolCharacters[Math.floor(Math.random() * symbolCharacters.length)],
+  ps6: symbolCharacters[Math.floor(Math.random() * symbolCharacters.length)],
+  ps7: symbolCharacters[Math.floor(Math.random() * symbolCharacters.length)],
+  ps8: symbolCharacters[Math.floor(Math.random() * symbolCharacters.length)],
+  ps9: symbolCharacters[Math.floor(Math.random() * symbolCharacters.length)],
+  ps10: symbolCharacters[Math.floor(Math.random() * symbolCharacters.length)],
+  ps11: symbolCharacters[Math.floor(Math.random() * symbolCharacters.length)],
+  ps12: symbolCharacters[Math.floor(Math.random() * symbolCharacters.length)],
+  ps13: symbolCharacters[Math.floor(Math.random() * symbolCharacters.length)],
+  ps14: symbolCharacters[Math.floor(Math.random() * symbolCharacters.length)],
+  ps15: symbolCharacters[Math.floor(Math.random() * symbolCharacters.length)],
+  ps16: symbolCharacters[Math.floor(Math.random() * symbolCharacters.length)],
+};
+
+let passwordLetter = {
+  pl1: characters[Math.floor(Math.random() * characters.length)],
+  pl3: characters[Math.floor(Math.random() * characters.length)],
+  pl2: characters[Math.floor(Math.random() * characters.length)],
+  pl4: characters[Math.floor(Math.random() * characters.length)],
+  pl5: characters[Math.floor(Math.random() * characters.length)],
+  pl6: characters[Math.floor(Math.random() * characters.length)],
+  pl7: characters[Math.floor(Math.random() * characters.length)],
+  pl8: characters[Math.floor(Math.random() * characters.length)],
+  pl9: characters[Math.floor(Math.random() * characters.length)],
+  pl10: characters[Math.floor(Math.random() * characters.length)],
+  pl11: characters[Math.floor(Math.random() * characters.length)],
+  pl12: characters[Math.floor(Math.random() * characters.length)],
+  pl13: characters[Math.floor(Math.random() * characters.length)],
+  pl14: characters[Math.floor(Math.random() * characters.length)],
+  pl15: characters[Math.floor(Math.random() * characters.length)],
+  pl16: characters[Math.floor(Math.random() * characters.length)],
+};
 
 generateBtn.addEventListener("click", getRandomPassword);
 
-function symbolFilter(){
-    for(let i = 0; i < characters.length; i++){
-        if ()
-    }
-}
-
 function getRandomPassword() {
-  for (let i = 0; i < characters.length; i++) {
-    password1.textContent =
-      randomLetter1 +
-      randomLetter2 +
-      randomLetter3 +
-      randomLetter4 +
-      randomLetter5 +
-      randomLetter6 +
-      randomLetter7 +
-      randomLetter8;
 
-      password2.textContent =
-      randomLetter9 +
-      randomLetter10 +
-      randomLetter11 +
-      randomLetter12 +
-      randomLetter13 +
-      randomLetter14 +
-      randomLetter15 +
-      randomLetter16;
-      console.log("clicked")
+  if((lenghtInput === 4) && (withSymbol.checked === true) ){
+ 
+     for (let i = 0; i < symbolCharacters.length; i++) {
+      password1.textContent =
+        passwordSymbol.ps1 +
+        passwordSymbol.ps2 +
+        passwordSymbol.ps3 +
+        passwordSymbol.ps4;
+    }
   }
+  else {
+    alert("Passwords minimum should be 4 characters. Please choose from 4 to 11 characters!");
   }
-
+    }
