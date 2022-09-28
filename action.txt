@@ -1,0 +1,4 @@
+1. Ability to set Password lenght
+2. Add <copy-on-click>
+3. Toggle "symbols on/off
+4. Can switch dark/light mode

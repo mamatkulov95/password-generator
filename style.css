@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+
+    text-align: center;
+    padding: 5%;
+    background-image: url(https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.password-container {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin: 0 auto;
+    gap: 30px;
+    padding: 50px 40px;
+    background: #1F2937;
+    border-radius: 10px;
+
+}
+
+.heading {
+    font-family: 'Karla';
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;
+    color: #D5D4D8;
+}
+
+.support-text {
+
+    font-size: 20px;
+    line-height: 28px;
+    color: #D5D4D8;
+}
+
+.generate-btn {
+    width: 191px;
+    margin: 0 auto;
+    height: 42px;
+    background: #10B981;
+    border-radius: 6px;
+    border: none;
+    color: #FFFFFF;
+
+}
+
+
+span {
+    color: #4ADF86;
+}
+
+.line {
+    border: 1px solid #2F3E53;
+
+}
+
+.generate-passwords {
+    display: flex;
+    padding: 10px;
+    gap: 30px;
+    justify-content: center;
+}
+
+.password1,
+.password2 {
+    border: none;
+    border-radius: 6px;
+    width: 211px;
+    height: 39px;
+    background: #273549;
+    color: whitesmoke;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+
+}
+
+.password-lenght{
+border-radius: 10px;
+padding: 5px;
+border: 3px solid seagreen;
+width: 55%;
+
+}
+
+.symbol{
+    display: flex;
+    gap: 10px;
+    color: wheat;
+    margin: 0 auto;
+}
+
+
+.copy-icon{
+    width: 20px;
+    height: 20px;
+}

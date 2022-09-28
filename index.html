@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="password-container">
+        <div class="text-content">
+          <p class="heading">Generate a <span> random password</span></p>
+
+          <p class="support-text">Never use an insecure password again.</p>
+        </div>
+        <form>
+          <input class="password-lenght" placeholder="Enter  length of password" type="number" />
+        </form>
+        <div class="symbol"><p class="symbols-text">With symbols:</p>
+            <input class="radio-button"  type="radio">
+        </div>
+        <button class="generate-btn">Generate passwords</button>
+
+        <div class="line"></div>
+
+        <div class="generate-passwords">
+          <div class="password1">
+            <label class="gen-password1" for="password1"></label>
+            <img class="copy-icon" src="./images/icons8-copy-50.png" alt="copy icon">
+          </div>
+          <div class="password2">
+            <label class="gen-password2" for="password1"></label>
+            <img class="copy-icon" src="./images/icons8-copy-50.png" alt="copy icon">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
